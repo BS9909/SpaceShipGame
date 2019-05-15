@@ -1,0 +1,3 @@
+C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir
+C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/edit_cache.dir
