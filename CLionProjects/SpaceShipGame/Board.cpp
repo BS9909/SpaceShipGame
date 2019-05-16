@@ -12,8 +12,10 @@ shipGraphic(shipGraphic),
 asteroidsGraphic1(asteroidsGraphic1)
 {}
 void Board::collision() {
-    if(shipGraphic.getShipSprite().getGlobalBounds().intersects(asteroidsGraphic1.getAsteroidSprite().getGlobalBounds())){
-        std::cout<<"loooser";
+    for (int i = 0; i <10 ; ++i) {
+        if (shipGraphic.getShipSprite().getGlobalBounds().intersects(asteroidsGraphic1.getAsteroidSpriteBox()[i].getGlobalBounds())) {
+            std::cout << "loooser";
+        }
     }
 
 }

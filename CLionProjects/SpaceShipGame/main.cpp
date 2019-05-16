@@ -36,7 +36,7 @@ int main() {
 //        std::cout<<"ship x: "<<ship.getShipPosition().xPos<<"ship y: "<<ship.getShipPosition().yPos<<std::endl;
 //        std::cout<<"kometa x: "<<asteroids.getAsteroidPosition().xPos<<"kometa y: "<<asteroids.getAsteroidPosition().yPos<<std::endl;
 
-        board.collision();
+        //board.collision();
         shipGraphic.draw(window);
         asteroidsGraphic.draw(window);
 

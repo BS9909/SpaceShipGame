@@ -5,21 +5,30 @@
 #include "Asteroids.h"
 #include "cstdlib"
 #include <ctime>
+#include <windows.h>
 
 Asteroids::Asteroids(int width, int high) {
     this->width = width;
     this->high = high;
-    setAsteroidPosition();
+    gameState = RUNNING;
+    asteroidsBox.push_back({width, rand() % high});
 }
 void Asteroids::setAsteroidPosition() {
-    srand(time(NULL));
-    asteroidPosition.xPos = width;
-    asteroidPosition.yPos = rand()%high;
-}
-void Asteroids::moveAsteroid() {
-    asteroidPosition.xPos -=1;
+    asteroidsBox.push_back({width, rand() % high});
 }
 
+void Asteroids::moveAsteroid() {
+    for (int i = 0; i < asteroidsBox.size(); ++i) {
+        asteroidsBox[i].xPos -=10;
+    }
+}
+void Asteroids::deleteAsteroidPositon() {
+
+}
 const sAsteroidPosition &Asteroids::getAsteroidPosition() const {
     return asteroidPosition;
+}
+
+const std::vector<sAsteroidPosition> &Asteroids::getAsteroidsBox() const {
+    return asteroidsBox;
 }
