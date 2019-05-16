@@ -28,4 +28,15 @@ void Ship::shipMove() {
             shipPosition.yPos += shipSize;
         }
     }
+    if(shipPosition.xPos<=3*shipSize) {
+        if (direction == RIGHT) {
+            shipPosition.xPos += shipSize / 2;
+        }
+    }
+    if(shipPosition.xPos>=shipSize) {
+
+        if (direction == LEFT) {
+            shipPosition.xPos -= shipSize / 2;
+        }
+    }
 }

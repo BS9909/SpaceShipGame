@@ -14,6 +14,13 @@ void shipController::controllEvents(sf::Event event) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
         ship.setDirection(UP);
         ship.shipMove();
-
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+        ship.setDirection(RIGHT);
+        ship.shipMove();
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+        ship.setDirection(LEFT);
+        ship.shipMove();
     }
 }

@@ -9,7 +9,7 @@ struct sShipPosition{
     int xPos;
     int yPos;
 };
-enum Direction{UP,DOWN};
+enum Direction{UP,DOWN, LEFT, RIGHT};
 class Ship {
     int width;
     int high;
