@@ -18,12 +18,12 @@ const sShipPosition &Ship::getShipPosition() const {
     return shipPosition;
 }
 void Ship::shipMove() {
-    if(shipPosition.yPos>=0) {
+    if(shipPosition.yPos>=0+shipSize/2) {
         if (direction == UP) {
             shipPosition.yPos -= shipSize;
         }
     }
-    if(shipPosition.yPos<=high) {
+    if(shipPosition.yPos<=high-shipSize*2.5) {
         if(direction==DOWN) {
             shipPosition.yPos += shipSize;
         }

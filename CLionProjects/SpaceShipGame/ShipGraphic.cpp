@@ -4,14 +4,15 @@
 
 #include "ShipGraphic.h"
 
-ShipGraphic::ShipGraphic(Ship &ship, int shipSize):ship(ship)
-{
+ShipGraphic::ShipGraphic(Ship &ship, int shipSize):ship(ship) {
     this->shipSize = shipSize;
-    texture.loadFromFile("head.jpg");
+    texture.loadFromFile("ship.jpg");
 }
 
 void ShipGraphic::draw(sf::RenderWindow &window) {
+
     shipSprite.setTexture(texture);
+    shipSprite.setScale(0.3,0.3);
     shipSprite.setPosition(ship.getShipPosition().xPos,ship.getShipPosition().yPos);
 
     window.draw(shipSprite);

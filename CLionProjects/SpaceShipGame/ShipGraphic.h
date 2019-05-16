@@ -13,6 +13,7 @@ class ShipGraphic {
     sf::RectangleShape shipRectangle;
     sf::Texture texture;
     sf::Sprite shipSprite;
+
 public:
     const sf::Sprite &getShipSprite() const;
     const sf::RectangleShape &getShipRectangle() const;

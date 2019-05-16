@@ -12,7 +12,10 @@
 int main() {
     srand(time(NULL));
     sf::RenderWindow window(sf::VideoMode(800,600), "SpaceShipGame");
-
+    sf::Texture backgourndTexture;
+    sf::Sprite backgroundSpirte;
+    backgourndTexture.loadFromFile("background.jpg");
+    backgroundSpirte.setTexture(backgourndTexture);
     sf::Event event;
     //----------OBIEKTY SHIP------------//
     Ship ship(800, 600,50);

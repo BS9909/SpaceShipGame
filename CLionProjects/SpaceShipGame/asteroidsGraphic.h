@@ -10,18 +10,14 @@
 class asteroidsGraphic {
     Asteroids &asteroids;
     int asteroidSize;
-    sf::RectangleShape asteroidRectangle;
     sf::Texture texture;
-    int i;
     std::vector<sf::Sprite> asteroidSpriteBox ;
     sf::Sprite asteroidSprite;
 public:
-    const std::vector<sf::Sprite> &getAsteroidSpriteBox() const;
-    const sf::RectangleShape &getAsteroidRectangle() const;
     asteroidsGraphic(int asteroidSize, Asteroids &asteroids);
     void draw(sf::RenderWindow &window);
-
-
+    void generateNewAsteroid();
+    const std::vector<sf::Sprite> &getAsteroidSpriteBox() const;
 };
 
 

@@ -16,19 +16,11 @@ Asteroids::Asteroids(int width, int high) {
 void Asteroids::setAsteroidPosition() {
     asteroidsBox.push_back({width, rand() % high});
 }
-
 void Asteroids::moveAsteroid() {
     for (int i = 0; i < asteroidsBox.size(); ++i) {
-        asteroidsBox[i].xPos -=10;
+        asteroidsBox[i].xPos -=5;
     }
 }
-void Asteroids::deleteAsteroidPositon() {
-
-}
-const sAsteroidPosition &Asteroids::getAsteroidPosition() const {
-    return asteroidPosition;
-}
-
 const std::vector<sAsteroidPosition> &Asteroids::getAsteroidsBox() const {
     return asteroidsBox;
 }
