@@ -6,8 +6,12 @@
 #include "Asteroids.h"
 #include "asteroidsGraphic.h"
 #include "Board.h"
+#include "Shoot.h"
+#include "ShootView.h"
+#include "ShootController.h"
 #include <ctime>
 #include <cstdlib>
+
 
 int main() {
     srand(time(NULL));
@@ -24,15 +28,20 @@ int main() {
     //----------------------------------//
     //----------OBIEKTY ASTEROID--------//
     Asteroids asteroids(800,600);
-    asteroidsGraphic asteroidsGraphic(50,asteroids);
+    asteroidsGraphic asteroidsGraphic(50,asteroids, 800, 600);
     //----------BOARD-------------------//
     Board board(ship,asteroids,shipGraphic,asteroidsGraphic);
+    //----------SHOOT--------------------//IN PROGRESS XD
+//    Shoot shoot(ship);
+//    ShootView shootView(shoot);
+//    ShootController shootController(shootView,window);
     while (window.isOpen()){
 
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
             shipController.controllEvents(event);
+
         }
 
         window.clear();
@@ -40,6 +49,8 @@ int main() {
 //        std::cout<<"kometa x: "<<asteroids.getAsteroidPosition().xPos<<"kometa y: "<<asteroids.getAsteroidPosition().yPos<<std::endl;
 
         //board.collision();
+        //shootController.controllEvent();
+
         shipGraphic.draw(window);
         asteroidsGraphic.draw(window);
 

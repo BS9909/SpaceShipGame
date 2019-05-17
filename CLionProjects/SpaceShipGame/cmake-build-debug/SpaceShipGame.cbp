@@ -106,6 +106,24 @@
 		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ShipGraphic.h">
 			<Option target="SpaceShipGame"/>
 		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/Shoot.cpp">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/Shoot.h">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ShootController.cpp">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ShootController.h">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ShootView.cpp">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ShootView.h">
+			<Option target="SpaceShipGame"/>
+		</Unit>
 		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.cpp">
 			<Option target="SpaceShipGame"/>
 		</Unit>
