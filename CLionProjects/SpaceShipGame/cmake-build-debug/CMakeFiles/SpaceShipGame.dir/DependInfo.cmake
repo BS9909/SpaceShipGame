@@ -6,6 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/Asteroids.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/Asteroids.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/Board.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/Board.cpp.obj"
+  "C:/Users/Bartek/CLionProjects/SpaceShipGame/BoardView.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj"
+  "C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittality.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/ExtraVittality.cpp.obj"
+  "C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittalityGraphic.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/Ship.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/ShipGraphic.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/ShipGraphic.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/Shoot.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/Shoot.cpp.obj"

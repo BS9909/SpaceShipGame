@@ -176,6 +176,87 @@ Board.cpp.s:
 	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
+BoardView.obj: BoardView.cpp.obj
+
+.PHONY : BoardView.obj
+
+# target to build an object file
+BoardView.cpp.obj:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj
+.PHONY : BoardView.cpp.obj
+
+BoardView.i: BoardView.cpp.i
+
+.PHONY : BoardView.i
+
+# target to preprocess a source file
+BoardView.cpp.i:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/BoardView.cpp.i
+.PHONY : BoardView.cpp.i
+
+BoardView.s: BoardView.cpp.s
+
+.PHONY : BoardView.s
+
+# target to generate assembly for a file
+BoardView.cpp.s:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/BoardView.cpp.s
+.PHONY : BoardView.cpp.s
+
+ExtraVittality.obj: ExtraVittality.cpp.obj
+
+.PHONY : ExtraVittality.obj
+
+# target to build an object file
+ExtraVittality.cpp.obj:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ExtraVittality.cpp.obj
+.PHONY : ExtraVittality.cpp.obj
+
+ExtraVittality.i: ExtraVittality.cpp.i
+
+.PHONY : ExtraVittality.i
+
+# target to preprocess a source file
+ExtraVittality.cpp.i:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ExtraVittality.cpp.i
+.PHONY : ExtraVittality.cpp.i
+
+ExtraVittality.s: ExtraVittality.cpp.s
+
+.PHONY : ExtraVittality.s
+
+# target to generate assembly for a file
+ExtraVittality.cpp.s:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ExtraVittality.cpp.s
+.PHONY : ExtraVittality.cpp.s
+
+ExtraVittalityGraphic.obj: ExtraVittalityGraphic.cpp.obj
+
+.PHONY : ExtraVittalityGraphic.obj
+
+# target to build an object file
+ExtraVittalityGraphic.cpp.obj:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.obj
+.PHONY : ExtraVittalityGraphic.cpp.obj
+
+ExtraVittalityGraphic.i: ExtraVittalityGraphic.cpp.i
+
+.PHONY : ExtraVittalityGraphic.i
+
+# target to preprocess a source file
+ExtraVittalityGraphic.cpp.i:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.i
+.PHONY : ExtraVittalityGraphic.cpp.i
+
+ExtraVittalityGraphic.s: ExtraVittalityGraphic.cpp.s
+
+.PHONY : ExtraVittalityGraphic.s
+
+# target to generate assembly for a file
+ExtraVittalityGraphic.cpp.s:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.s
+.PHONY : ExtraVittalityGraphic.cpp.s
+
 Ship.obj: Ship.cpp.obj
 
 .PHONY : Ship.obj
@@ -407,6 +488,15 @@ help:
 	@echo ... Board.obj
 	@echo ... Board.i
 	@echo ... Board.s
+	@echo ... BoardView.obj
+	@echo ... BoardView.i
+	@echo ... BoardView.s
+	@echo ... ExtraVittality.obj
+	@echo ... ExtraVittality.i
+	@echo ... ExtraVittality.s
+	@echo ... ExtraVittalityGraphic.obj
+	@echo ... ExtraVittalityGraphic.i
+	@echo ... ExtraVittalityGraphic.s
 	@echo ... Ship.obj
 	@echo ... Ship.i
 	@echo ... Ship.s

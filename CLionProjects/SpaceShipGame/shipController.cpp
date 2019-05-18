@@ -3,24 +3,22 @@
 //
 
 #include "shipController.h"
-shipController::shipController(Ship &ship):ship(ship) {}
+shipController::shipController(Ship &ship,ShipGraphic &shipGraphic):ship(ship),
+shipGraphic(shipGraphic)
+{}
 
 void shipController::controllEvents(sf::Event event) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-        ship.setDirection(DOWN);
-        ship.shipMove();
+        shipGraphic.setDirection(DOWN);
 
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-        ship.setDirection(UP);
-        ship.shipMove();
+        shipGraphic.setDirection(UP);
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-        ship.setDirection(RIGHT);
-        ship.shipMove();
+        shipGraphic.setDirection(RIGHT);
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-        ship.setDirection(LEFT);
-        ship.shipMove();
+        shipGraphic.setDirection(LEFT);
     }
 }

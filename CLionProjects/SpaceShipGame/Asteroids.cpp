@@ -10,16 +10,10 @@
 Asteroids::Asteroids(int width, int high) {
     this->width = width;
     this->high = high;
-    gameState = RUNNING;
     asteroidsBox.push_back({width, rand() % high});
 }
 void Asteroids::setAsteroidPosition() {
     asteroidsBox.push_back({width, rand() % high});
-}
-void Asteroids::moveAsteroid() {
-    for (int i = 0; i < asteroidsBox.size(); ++i) {
-        asteroidsBox[i].xPos -=5;
-    }
 }
 const std::vector<sAsteroidPosition> &Asteroids::getAsteroidsBox() const {
     return asteroidsBox;

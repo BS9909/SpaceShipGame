@@ -94,6 +94,24 @@
 		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/Board.h">
 			<Option target="SpaceShipGame"/>
 		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/BoardView.cpp">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/BoardView.h">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittality.cpp">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittality.h">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittalityGraphic.cpp">
+			<Option target="SpaceShipGame"/>
+		</Unit>
+		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittalityGraphic.h">
+			<Option target="SpaceShipGame"/>
+		</Unit>
 		<Unit filename="C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.cpp">
 			<Option target="SpaceShipGame"/>
 		</Unit>

@@ -1,0 +1,37 @@
+//
+// Created by Bartek on 17.05.2019.
+//
+
+#include "ExtraVittalityGraphic.h"
+ExtraVittalityGraphic::ExtraVittalityGraphic(ExtraVittality &extraVittality):extraVittality(extraVittality) {
+    itemTexture.loadFromFile("fuel.jpg");
+    itemSprite.setTexture(itemTexture);
+    itemSprite.setScale(0.2,0.2);
+    itemSprite.setPosition(extraVittality.getItemBox()[0].xPos, extraVittality.getItemBox()[0].yPos);
+    itemSpriteBox.push_back(itemSprite);
+}
+void ExtraVittalityGraphic::draw(sf::RenderWindow &window) {
+    for (int i = 0; i < itemSpriteBox.size(); ++i) {
+        itemSpriteBox[i].move(sf::Vector2f(-1,0));
+        window.draw(itemSpriteBox[i]);
+    }
+    generateNewItem();
+}
+void ExtraVittalityGraphic::generateNewItem() {
+    for (int i = 0; i < itemSpriteBox.size(); ++i) {
+        if(itemSpriteBox[i].getPosition().x == 300){
+            extraVittality.setItemPosition();
+            itemSprite.setTexture(itemTexture);
+            itemSprite.setScale(0.2,0.2);
+            itemSprite.setRotation(rand()&360);
+            itemSprite.setPosition(extraVittality.getItemBox()[i].xPos, extraVittality.getItemBox()[i].yPos);
+            itemSpriteBox.push_back(itemSprite);
+        }
+    }
+}
+void ExtraVittalityGraphic::setItemSprite(int itemBoxIndeks) {
+    itemSpriteBox.erase(itemSpriteBox.begin()+itemBoxIndeks);
+}
+const std::vector<sf::Sprite> &ExtraVittalityGraphic::getItemSpriteBox() const {
+    return itemSpriteBox;
+}

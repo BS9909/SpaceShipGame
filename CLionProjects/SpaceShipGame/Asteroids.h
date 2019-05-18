@@ -9,17 +9,13 @@
 struct sAsteroidPosition{
     int xPos,yPos;
 };
-enum GameState{FINISHED_LOOSE, RUNNING};
 class Asteroids {
     std::vector<sAsteroidPosition> asteroidsBox;
     int width,high;
-    GameState gameState;
 public:
     const std::vector<sAsteroidPosition> &getAsteroidsBox() const;
     Asteroids(int width, int high);
     void setAsteroidPosition();
-    void moveAsteroid();
-
 };
 
 

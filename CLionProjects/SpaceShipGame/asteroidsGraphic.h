@@ -22,6 +22,7 @@ public:
     void draw(sf::RenderWindow &window);
     void generateNewAsteroid();
     const std::vector<sf::Sprite> &getAsteroidSpriteBox() const;
+    void setAsteroidSprite(int asteroidIndex);
 };
 
 

@@ -9,19 +9,21 @@ struct sShipPosition{
     int xPos;
     int yPos;
 };
-enum Direction{UP,DOWN, LEFT, RIGHT};
 class Ship {
     int width;
     int high;
     sShipPosition shipPosition;
-    Direction direction;
     int shipSize;
+    int HP;
 public:
     Ship(int width, int high,int shipSize);
     void setShipPosition();
     const sShipPosition &getShipPosition() const;
-    void shipMove();
-    void setDirection(Direction direction1){direction = direction1;}
+    const int getHigh() const {return high;}
+    const int getWidth() const {return width;}
+    const int getShipSize() const { return shipSize;}
+    int getHP(){return HP;}
+    void setHP(int newHP){HP += newHP;}
 };
 
 

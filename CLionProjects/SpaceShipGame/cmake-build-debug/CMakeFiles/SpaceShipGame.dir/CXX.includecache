@@ -6,35 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Bartek/CLionProjects/SpaceShipGame/Asteroids.h
-vector
--
-iostream
--
-
 C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.h
+
+C:/Users/Bartek/CLionProjects/SpaceShipGame/ShipGraphic.cpp
+ShipGraphic.h
+C:/Users/Bartek/CLionProjects/SpaceShipGame/ShipGraphic.h
 
 C:/Users/Bartek/CLionProjects/SpaceShipGame/ShipGraphic.h
 SFML/Graphics.hpp
 -
 Ship.h
 C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.h
-
-C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.cpp
-asteroidsGraphic.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.h
-windows.h
--
-
-C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.h
-SFML/Graphics.hpp
--
-Asteroids.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/Asteroids.h
-cstdlib
-C:/Users/Bartek/CLionProjects/SpaceShipGame/cstdlib
-ShipGraphic.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/ShipGraphic.h
 
 C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h
