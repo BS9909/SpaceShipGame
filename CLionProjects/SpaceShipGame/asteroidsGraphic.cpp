@@ -20,12 +20,12 @@ asteroids(asteroids)
 }
 void asteroidsGraphic::draw(sf::RenderWindow &window) {
     //Kontrola wielkosci vectorów
-    std::cout << "Vector Spritow: " << asteroidSpriteBox.size() << std::endl;
-    std::cout << "Vector pozycji: " << asteroids.getAsteroidsBox().size() << std::endl;
+    //std::cout << "Vector Spritow: " << asteroidSpriteBox.size() << std::endl;
+    //std::cout << "Vector pozycji: " << asteroids.getAsteroidsBox().size() << std::endl;
     //std::cout<<asteroidSpriteBox[0].getPosition().x<<std::endl;
 
     for (int i = 0; i < asteroidSpriteBox.size(); ++i) {
-        asteroidSpriteBox[i].move(-1, 0);
+        asteroidSpriteBox[i].move(-0.5, 0);
         window.draw(asteroidSpriteBox[i]);
     }
     generateNewAsteroid();

@@ -6,9 +6,7 @@
 #include "Asteroids.h"
 #include "asteroidsGraphic.h"
 #include "Board.h"
-#include "Shoot.h"
 #include "ShootView.h"
-#include "ShootController.h"
 #include "ExtraVittality.h"
 #include "ExtraVittalityGraphic.h"
 #include "BoardView.h"
@@ -34,14 +32,12 @@ int main() {
     asteroidsGraphic asteroidsGraphic(50,asteroids, 800, 600);
 
     //----------SHOOT--------------------//IN PROGRESS XD
-//    Shoot shoot(ship);
-//    ShootView shootView(shoot);
-//    ShootController shootController(shootView,window);
+    ShootView shootView(shipGraphic);
     //---------EXTRA VITTALITY------------//
     ExtraVittality extraVittality(800,600);
     ExtraVittalityGraphic extraVittalityGraphic(extraVittality);
     //----------BOARD-------------------//
-    Board board(window,ship,asteroids,shipGraphic,asteroidsGraphic,extraVittality,extraVittalityGraphic);
+    Board board(window,ship,asteroids,shipGraphic,asteroidsGraphic,extraVittality,extraVittalityGraphic,shootView);
     BoardView boardView(board);
     while (window.isOpen()){
 
@@ -57,12 +53,12 @@ int main() {
 //        std::cout<<"kometa x: "<<asteroids.getAsteroidPosition().xPos<<"kometa y: "<<asteroids.getAsteroidPosition().yPos<<std::endl;
 
         board.collision();
-        //shootController.controllEvent();
 
         shipGraphic.draw(window);
         asteroidsGraphic.draw(window);
         extraVittalityGraphic.draw(window);
         boardView.draw(window);
+        shootView.draw(window);
 
         window.display();
     }

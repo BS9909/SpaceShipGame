@@ -23,6 +23,7 @@ public:
     void draw(sf::RenderWindow &window);
     void setDirection(Direction direction1){direction = direction1;}
     void setNewTexture(sf::RenderWindow &window);
+    sf::Sprite getShipPosition(){ return shipSprite;}
 };
 
 

@@ -7,6 +7,7 @@
 #include "asteroidsGraphic.h"
 #include "ExtraVittalityGraphic.h"
 #include "ExtraVittality.h"
+#include "ShootView.h"
 #include <SFML/Graphics.hpp>
 #ifndef SPACESHIPGAME_BOARD_H
 #define SPACESHIPGAME_BOARD_H
@@ -19,11 +20,12 @@ class Board {
     asteroidsGraphic &asteroidsGraphic1;
     ExtraVittalityGraphic &extraVittalityGraphic;
     ExtraVittality &extraVittality;
+    ShootView &shootView;
     GameState gameState;
     int score;
     sf::RenderWindow &window;
 public:
-    Board(sf::RenderWindow &window,Ship &ship, Asteroids &asteroids,ShipGraphic &shipGraphic,asteroidsGraphic &asteroidsGraphic1, ExtraVittality &extraVittality, ExtraVittalityGraphic &extraVittalityGraphic);
+    Board(sf::RenderWindow &window,Ship &ship, Asteroids &asteroids,ShipGraphic &shipGraphic,asteroidsGraphic &asteroidsGraphic1, ExtraVittality &extraVittality, ExtraVittalityGraphic &extraVittalityGraphic, ShootView&shootView);
     void collision();
      std::string getScore(){ std::string _str = std::to_string(score);return _str;}
 };

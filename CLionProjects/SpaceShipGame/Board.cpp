@@ -5,14 +5,15 @@
 #include "Board.h"
 #include <iostream>
 
-Board::Board(sf::RenderWindow &window,Ship &ship, Asteroids &asteroids,ShipGraphic &shipGraphic,asteroidsGraphic &asteroidsGraphic1, ExtraVittality &extraVittality, ExtraVittalityGraphic &extraVittalityGraphic):
+Board::Board(sf::RenderWindow &window,Ship &ship, Asteroids &asteroids,ShipGraphic &shipGraphic,asteroidsGraphic &asteroidsGraphic1, ExtraVittality &extraVittality, ExtraVittalityGraphic &extraVittalityGraphic, ShootView &shootView):
 window(window),
 ship(ship),
 asteroids(asteroids),
 shipGraphic(shipGraphic),
 asteroidsGraphic1(asteroidsGraphic1),
 extraVittality(extraVittality),
-extraVittalityGraphic(extraVittalityGraphic)
+extraVittalityGraphic(extraVittalityGraphic),
+shootView(shootView)
 {
     gameState = RUNNING;
     score = 5;
@@ -31,9 +32,16 @@ void Board::collision() {
             extraVittalityGraphic.setItemSprite(j);
             score++;
         }
-        if (score == 0) {
-            gameState = FINISHED_LOOSE;
-            shipGraphic.setNewTexture(window);
+    }
+    for (int j = 0; j <shootView.getBulletSpriteBox().size(); ++j) {
+        if (asteroidsGraphic1.getAsteroidSpriteBox()[j].getGlobalBounds().intersects(
+                shootView.getBulletSpriteBox()[j].getGlobalBounds())) {
+            asteroidsGraphic1.setAsteroidSprite(j);
+            std::cout<<"Trafiony"<<std::endl;
         }
+    }
+    if (score == 0) {
+        gameState = FINISHED_LOOSE;
+        shipGraphic.setNewTexture(window);
     }
 }

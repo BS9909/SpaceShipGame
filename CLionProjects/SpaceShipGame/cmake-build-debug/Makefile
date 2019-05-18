@@ -311,60 +311,6 @@ ShipGraphic.cpp.s:
 	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ShipGraphic.cpp.s
 .PHONY : ShipGraphic.cpp.s
 
-Shoot.obj: Shoot.cpp.obj
-
-.PHONY : Shoot.obj
-
-# target to build an object file
-Shoot.cpp.obj:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/Shoot.cpp.obj
-.PHONY : Shoot.cpp.obj
-
-Shoot.i: Shoot.cpp.i
-
-.PHONY : Shoot.i
-
-# target to preprocess a source file
-Shoot.cpp.i:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/Shoot.cpp.i
-.PHONY : Shoot.cpp.i
-
-Shoot.s: Shoot.cpp.s
-
-.PHONY : Shoot.s
-
-# target to generate assembly for a file
-Shoot.cpp.s:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/Shoot.cpp.s
-.PHONY : Shoot.cpp.s
-
-ShootController.obj: ShootController.cpp.obj
-
-.PHONY : ShootController.obj
-
-# target to build an object file
-ShootController.cpp.obj:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ShootController.cpp.obj
-.PHONY : ShootController.cpp.obj
-
-ShootController.i: ShootController.cpp.i
-
-.PHONY : ShootController.i
-
-# target to preprocess a source file
-ShootController.cpp.i:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ShootController.cpp.i
-.PHONY : ShootController.cpp.i
-
-ShootController.s: ShootController.cpp.s
-
-.PHONY : ShootController.s
-
-# target to generate assembly for a file
-ShootController.cpp.s:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ShootController.cpp.s
-.PHONY : ShootController.cpp.s
-
 ShootView.obj: ShootView.cpp.obj
 
 .PHONY : ShootView.obj
@@ -503,12 +449,6 @@ help:
 	@echo ... ShipGraphic.obj
 	@echo ... ShipGraphic.i
 	@echo ... ShipGraphic.s
-	@echo ... Shoot.obj
-	@echo ... Shoot.i
-	@echo ... Shoot.s
-	@echo ... ShootController.obj
-	@echo ... ShootController.i
-	@echo ... ShootController.s
 	@echo ... ShootView.obj
 	@echo ... ShootView.i
 	@echo ... ShootView.s

@@ -14,6 +14,7 @@ class ExtraVittalityGraphic {
     sf::Texture itemTexture;
     sf::Sprite itemSprite;
     std::vector<sf::Sprite> itemSpriteBox;
+
 public:
     ExtraVittalityGraphic(ExtraVittality &extraVittality);
     void draw(sf::RenderWindow &window);

@@ -11,8 +11,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittalityGraphic.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/Ship.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/ShipGraphic.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/ShipGraphic.cpp.obj"
-  "C:/Users/Bartek/CLionProjects/SpaceShipGame/Shoot.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/Shoot.cpp.obj"
-  "C:/Users/Bartek/CLionProjects/SpaceShipGame/ShootController.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/ShootController.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/ShootView.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/ShootView.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/asteroidsGraphic.cpp.obj"
   "C:/Users/Bartek/CLionProjects/SpaceShipGame/main.cpp" "C:/Users/Bartek/CLionProjects/SpaceShipGame/cmake-build-debug/CMakeFiles/SpaceShipGame.dir/main.cpp.obj"

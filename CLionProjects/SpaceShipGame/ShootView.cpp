@@ -3,14 +3,32 @@
 //
 
 #include "ShootView.h"
+#include <vector>
 
-ShootView::ShootView(Shoot &shoot):shoot(shoot) {
+ShootView::ShootView(ShipGraphic &shipGraphic):shipGraphic(shipGraphic) {
     bulletTexture.loadFromFile("bullet.jpg");
     bulletSprite.setTexture(bulletTexture);
-    bulletSprite.setScale(sf::Vector2f(0.1,0.1));
-    bulletSprite.setPosition(shoot.getBulletPosition().xPos,shoot.getBulletPosition().yPos);
+    bulletSprite.setScale(sf::Vector2f(0.05,0.05));
+    bulletSpriteBox.push_back(bulletSprite);
+    isShoot = false;
 }
 void ShootView::draw(sf::RenderWindow &window) {
-    bulletSprite.move(sf::Vector2f(1,0));
-    window.draw(bulletSprite);
+    elapsed = clock.getElapsedTime();
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&elapsed.asSeconds()>0.5) {
+        isShoot = true;
+        bulletSprite.setPosition(shipGraphic.getShipPosition().getPosition().x+50,shipGraphic.getShipPosition().getPosition().y);
+        bulletSpriteBox.push_back(bulletSprite);
+        clock.restart();
+    }
+    if(isShoot) {
+        for (int i = 1; i < bulletSpriteBox.size(); ++i) {
+            bulletSpriteBox[i].move(0.5 ,0);
+            window.draw(bulletSpriteBox[i]);
+        }
+    }
+
+}
+
+const std::vector<sf::Sprite> &ShootView::getBulletSpriteBox() const {
+    return bulletSpriteBox;
 }
