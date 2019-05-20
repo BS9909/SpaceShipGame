@@ -43,11 +43,11 @@ int main() {
     //----------BOARD-------------------//
     Board board(window,ship,asteroids,shipGraphic,asteroidsGraphic,extraVittality,extraVittalityGraphic,shootView,shipController);
     //----------INTRO--------------------//
-    IntroView introView(50, 400,300);
-    IntroController introController(introView);
+    IntroView introView(50, 320,250);
+    IntroController introController(introView, asteroidsGraphic);
     //------------SCORE-------------------//
     ScoreView scoreView(window,board);
-    ScoreController scoreController(scoreView);
+    ScoreController scoreController(scoreView,ship,board,asteroidsGraphic,introController);
     //-----------GAME MANAGER-------------//
     GameManager gameManager(introController, board,scoreController);
     while (window.isOpen()){

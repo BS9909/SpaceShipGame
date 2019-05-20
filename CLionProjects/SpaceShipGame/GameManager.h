@@ -18,7 +18,6 @@ public:
     void updateStte();
     void draw(sf::RenderWindow &window);
     void handleState(sf::RenderWindow &window);
-
 };
 
 

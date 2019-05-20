@@ -260,9 +260,13 @@ CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/inc
 CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: ../Asteroids.h
 CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: ../IntroController.cpp
 CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: ../IntroController.h
 CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: ../IntroView.h
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: ../Ship.h
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: ../ShipGraphic.h
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: ../asteroidsGraphic.h
 CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics.hpp
 CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -419,6 +423,8 @@ CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../Asteroids.h
 CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../Board.h
 CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../ExtraVittality.h
 CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../ExtraVittalityGraphic.h
+CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../IntroController.h
+CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../IntroView.h
 CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../ScoreController.cpp
 CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../ScoreController.h
 CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../ScoreView.h

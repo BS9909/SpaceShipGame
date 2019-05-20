@@ -12,14 +12,6 @@ vector
 iostream
 -
 
-C:/Users/Bartek/CLionProjects/SpaceShipGame/Board.cpp
-Board.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/Board.h
-iostream
--
-windows.h
--
-
 C:/Users/Bartek/CLionProjects/SpaceShipGame/Board.h
 Ship.h
 C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.h
@@ -45,10 +37,6 @@ iostream
 -
 vector
 -
-
-C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittalityGraphic.cpp
-ExtraVittalityGraphic.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittalityGraphic.h
 
 C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittalityGraphic.h
 SFML/Graphics.hpp
@@ -77,6 +65,8 @@ C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreController.h
 C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroController.h
 IntroView.h
 C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroView.h
+asteroidsGraphic.h
+C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.h
 
 C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroView.h
 SFML/Graphics.hpp
@@ -89,10 +79,14 @@ C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreController.h
 C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreController.h
 ScoreView.h
 C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreView.h
-
-C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreView.cpp
-ScoreView.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreView.h
+Ship.h
+C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.h
+Board.h
+C:/Users/Bartek/CLionProjects/SpaceShipGame/Board.h
+asteroidsGraphic.h
+C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.h
+IntroController.h
+C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroController.h
 
 C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreView.h
 SFML/Graphics.hpp

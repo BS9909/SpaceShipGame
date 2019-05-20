@@ -20,6 +20,12 @@ void GameManager::updateStte() {
             if(board.getIsFinished())
                 gameState = SCORE;
             break;
+        case SCORE:
+            if (scoreController.getisFinished()) {
+                gameState = INTRO;
+                scoreController.resetFinished();
+            }
+            break;
     }
 }
 void GameManager::handleState(sf::RenderWindow &window) {
@@ -30,6 +36,9 @@ void GameManager::handleState(sf::RenderWindow &window) {
             break;
         case GAME:
             board.collision();
+            break;
+        case SCORE:
+            scoreController.controllEvent();
             break;
     }
 }

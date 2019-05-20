@@ -33,6 +33,8 @@ public:
     bool getIsFinished(){return isFinished;}
     void draw(sf::RenderWindow &window);
     const std::string getTimer() const {std::string _str = std::to_string(timer);return _str; return _str;}
+    void resetFinishBoard(){isFinished = false;}
+    void resetTimer(){timer = 0;}
 };
 
 

@@ -46,7 +46,6 @@ void Board::collision() {
         }
     }
     if (ship.getHP() <= 0) {
-        shipGraphic.setNewTexture(window);
         isFinished = true;
     }
 }

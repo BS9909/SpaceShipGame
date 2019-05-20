@@ -19,10 +19,26 @@ ScoreView::ScoreView(sf::RenderWindow &window, Board &board):window(window),boar
     textScore.setOutlineThickness(2);
     textScore.setOutlineColor(sf::Color::Blue);
     textScore.setFillColor(sf::Color::Black);
+
+    playAgainText.setFont(font);
+    playAgainText.setCharacterSize(100);
+    playAgainText.setPosition(160, 250);
+    playAgainText.setOutlineThickness(2);
+    playAgainText.setOutlineColor(sf::Color::Red);
+    playAgainText.setFillColor(sf::Color::Black);
+    playAgainText.setString("Play Again");
 }
 void ScoreView::draw(sf::RenderWindow &window1) {
     textScore.setString("Score: " + board.getTimer() );
     window1.draw(gameOverText);
     window1.draw(textScore);
+    window1.draw(playAgainText);
+}
 
+const sf::Text &ScoreView::getPlayAgainText() const {
+    return playAgainText;
+}
+
+sf::RenderWindow &ScoreView::getWindow() const {
+    return window;
 }

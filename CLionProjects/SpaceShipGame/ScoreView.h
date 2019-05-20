@@ -9,10 +9,12 @@
 
 class ScoreView {
     Board &board;
-    sf::Text textScore, gameOverText;
     sf::Font font;
+    sf::Text textScore, gameOverText, playAgainText;
     sf::RenderWindow &window;
 public:
+    sf::RenderWindow &getWindow() const;
+    const sf::Text &getPlayAgainText() const;
     ScoreView(sf::RenderWindow &window, Board &board);
     void draw(sf::RenderWindow &window1);
 

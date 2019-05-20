@@ -26,6 +26,7 @@ public:
     int getHP(){return HP;}
     void setHP(int newHP){HP += newHP;}
     std::string getHPString(){ std::string _str = std::to_string(HP);return _str;}
+    void resetHP(){HP = 15;}
 };
 
 

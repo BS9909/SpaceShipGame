@@ -261,9 +261,13 @@ CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj
+ C:/Users/Bartek/CLionProjects/SpaceShipGame/Asteroids.h
  C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroController.cpp
  C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroController.h
  C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroView.h
+ C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.h
+ C:/Users/Bartek/CLionProjects/SpaceShipGame/ShipGraphic.h
+ C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.h
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Config.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics.hpp
  C:/Users/Bartek/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -420,6 +424,8 @@ CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj
  C:/Users/Bartek/CLionProjects/SpaceShipGame/Board.h
  C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittality.h
  C:/Users/Bartek/CLionProjects/SpaceShipGame/ExtraVittalityGraphic.h
+ C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroController.h
+ C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroView.h
  C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreController.cpp
  C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreController.h
  C:/Users/Bartek/CLionProjects/SpaceShipGame/ScoreView.h

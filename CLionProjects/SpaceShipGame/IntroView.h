@@ -7,14 +7,16 @@
 
 
 class IntroView {
-    sf::Text startText;
+    sf::Text startText, introText, hardText, normalText, easyText;
     sf::Font font;
     int textSize,xPostion,yPosition;
 public:
     IntroView(int textSize, int xPostion, int yPosition);
     void draw(sf::RenderWindow &window);
     const sf::Text getText()const { return startText;}
-
+    const sf::Text getEasyText()const { return easyText;}
+    const sf::Text getNormalText()const { return normalText;}
+    const sf::Text getHardText()const { return hardText;}
 };
 
 
