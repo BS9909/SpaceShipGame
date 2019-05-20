@@ -12,6 +12,13 @@ ShipGraphic::ShipGraphic(Ship &ship, int shipSize):ship(ship) {
     shipSprite.setTexture(texture);
     shipSprite.setScale(0.2,0.2);
     shipSprite.setPosition(ship.getShipPosition().xPos,ship.getShipPosition().yPos);
+
+    font.loadFromFile("arial.ttf");
+    HPText.setFont(font);
+    HPText.setPosition(0,0);
+    HPText.setOutlineThickness(-1);
+    HPText.setOutlineColor(sf::Color::Cyan);
+    HPText.setScale(1,1);
 }
 
 void ShipGraphic::draw(sf::RenderWindow &window) {
@@ -37,6 +44,9 @@ void ShipGraphic::draw(sf::RenderWindow &window) {
         }
     }
     window.draw(shipSprite);
+
+    HPText.setString("HP: " + ship.getHPString());
+    window.draw(HPText);
 }
 
 const sf::RectangleShape &ShipGraphic::getShipRectangle() const {

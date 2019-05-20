@@ -3,6 +3,7 @@
 //
 
 #include "asteroidsGraphic.h"
+#include <cmath>
 #include <windows.h>
 
 asteroidsGraphic::asteroidsGraphic(int asteroidSize, Asteroids &asteroids, int width, int high):
@@ -17,8 +18,10 @@ asteroids(asteroids)
     asteroidSprite.setPosition(asteroids.getAsteroidsBox()[0].xPos,asteroids.getAsteroidsBox()[0].yPos);
     asteroidSpriteBox.push_back(asteroidSprite);
     generateNewAsteroid();
+
 }
 void asteroidsGraphic::draw(sf::RenderWindow &window) {
+
     //Kontrola wielkosci vectorów
     //std::cout << "Vector Spritow: " << asteroidSpriteBox.size() << std::endl;
     //std::cout << "Vector pozycji: " << asteroids.getAsteroidsBox().size() << std::endl;
@@ -28,7 +31,14 @@ void asteroidsGraphic::draw(sf::RenderWindow &window) {
         asteroidSpriteBox[i].move(-0.5, 0);
         window.draw(asteroidSpriteBox[i]);
     }
-    generateNewAsteroid();
+    if(asteroidSpriteBox.size()>4) {
+        for (int j = 0; j < asteroidSpriteBox.size(); ++j) {
+            if (asteroidSpriteBox[j].getPosition().x == -50)
+                asteroidSpriteBox[j].setPosition(width, rand() % high);
+        }
+    }else {
+        generateNewAsteroid();
+    }
 }
 void asteroidsGraphic::generateNewAsteroid() {
     for (int j = 0; j < asteroidSpriteBox.size(); ++j) {
@@ -39,8 +49,8 @@ void asteroidsGraphic::generateNewAsteroid() {
             asteroidSprite.setPosition(asteroids.getAsteroidsBox()[j].xPos, asteroids.getAsteroidsBox()[j].yPos);
             asteroidSpriteBox.push_back(asteroidSprite);
         }
-
     }
+
 }
 const std::vector<sf::Sprite> &asteroidsGraphic::getAsteroidSpriteBox() const {
     return asteroidSpriteBox;

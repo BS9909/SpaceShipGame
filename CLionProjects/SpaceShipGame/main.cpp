@@ -9,7 +9,11 @@
 #include "ShootView.h"
 #include "ExtraVittality.h"
 #include "ExtraVittalityGraphic.h"
-#include "BoardView.h"
+#include "IntroView.h"
+#include "IntroController.h"
+#include "ScoreView.h"
+#include "ScoreController.h"
+#include "GameManager.h"
 #include <ctime>
 #include <cstdlib>
 
@@ -35,30 +39,33 @@ int main() {
     ShootView shootView(shipGraphic);
     //---------EXTRA VITTALITY------------//
     ExtraVittality extraVittality(800,600);
-    ExtraVittalityGraphic extraVittalityGraphic(extraVittality);
+    ExtraVittalityGraphic extraVittalityGraphic(extraVittality, 800,600);
     //----------BOARD-------------------//
-    Board board(window,ship,asteroids,shipGraphic,asteroidsGraphic,extraVittality,extraVittalityGraphic,shootView);
-    BoardView boardView(board);
+    Board board(window,ship,asteroids,shipGraphic,asteroidsGraphic,extraVittality,extraVittalityGraphic,shootView,shipController);
+    //----------INTRO--------------------//
+    IntroView introView(50, 400,300);
+    IntroController introController(introView);
+    //------------SCORE-------------------//
+    ScoreView scoreView(window,board);
+    ScoreController scoreController(scoreView);
+    //-----------GAME MANAGER-------------//
+    GameManager gameManager(introController, board,scoreController);
     while (window.isOpen()){
 
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
-            shipController.controllEvents(event);
-
         }
 
         window.clear();
 //        std::cout<<"ship x: "<<ship.getShipPosition().xPos<<"ship y: "<<ship.getShipPosition().yPos<<std::endl;
 //        std::cout<<"kometa x: "<<asteroids.getAsteroidPosition().xPos<<"kometa y: "<<asteroids.getAsteroidPosition().yPos<<std::endl;
 
-        board.collision();
+        gameManager.handleState(window);
 
-        shipGraphic.draw(window);
-        asteroidsGraphic.draw(window);
-        extraVittalityGraphic.draw(window);
-        boardView.draw(window);
-        shootView.draw(window);
+        gameManager.draw(window);
+        //board.collision();
+        //board.draw(window);
 
         window.display();
     }

@@ -16,6 +16,9 @@ class asteroidsGraphic {
     std::vector<sf::Sprite> asteroidSpriteBox ;
     sf::Sprite asteroidSprite;
     int width, high;
+    float elapseTime;
+    sf::Clock clock;
+
 
 public:
     asteroidsGraphic(int asteroidSize, Asteroids &asteroids, int widht, int high);

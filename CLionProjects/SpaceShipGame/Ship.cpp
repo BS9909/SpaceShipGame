@@ -9,6 +9,7 @@ Ship::Ship(int width, int high, int shipSize) {
     this->width = width;
     this->high = high;
     this->shipSize = shipSize;
+    HP = 15;
     setShipPosition();
 }
 void Ship::setShipPosition() {

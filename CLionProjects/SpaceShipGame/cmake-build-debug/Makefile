@@ -176,33 +176,6 @@ Board.cpp.s:
 	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
-BoardView.obj: BoardView.cpp.obj
-
-.PHONY : BoardView.obj
-
-# target to build an object file
-BoardView.cpp.obj:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj
-.PHONY : BoardView.cpp.obj
-
-BoardView.i: BoardView.cpp.i
-
-.PHONY : BoardView.i
-
-# target to preprocess a source file
-BoardView.cpp.i:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/BoardView.cpp.i
-.PHONY : BoardView.cpp.i
-
-BoardView.s: BoardView.cpp.s
-
-.PHONY : BoardView.s
-
-# target to generate assembly for a file
-BoardView.cpp.s:
-	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/BoardView.cpp.s
-.PHONY : BoardView.cpp.s
-
 ExtraVittality.obj: ExtraVittality.cpp.obj
 
 .PHONY : ExtraVittality.obj
@@ -256,6 +229,141 @@ ExtraVittalityGraphic.s: ExtraVittalityGraphic.cpp.s
 ExtraVittalityGraphic.cpp.s:
 	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.s
 .PHONY : ExtraVittalityGraphic.cpp.s
+
+GameManager.obj: GameManager.cpp.obj
+
+.PHONY : GameManager.obj
+
+# target to build an object file
+GameManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj
+.PHONY : GameManager.cpp.obj
+
+GameManager.i: GameManager.cpp.i
+
+.PHONY : GameManager.i
+
+# target to preprocess a source file
+GameManager.cpp.i:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/GameManager.cpp.i
+.PHONY : GameManager.cpp.i
+
+GameManager.s: GameManager.cpp.s
+
+.PHONY : GameManager.s
+
+# target to generate assembly for a file
+GameManager.cpp.s:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/GameManager.cpp.s
+.PHONY : GameManager.cpp.s
+
+IntroController.obj: IntroController.cpp.obj
+
+.PHONY : IntroController.obj
+
+# target to build an object file
+IntroController.cpp.obj:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj
+.PHONY : IntroController.cpp.obj
+
+IntroController.i: IntroController.cpp.i
+
+.PHONY : IntroController.i
+
+# target to preprocess a source file
+IntroController.cpp.i:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/IntroController.cpp.i
+.PHONY : IntroController.cpp.i
+
+IntroController.s: IntroController.cpp.s
+
+.PHONY : IntroController.s
+
+# target to generate assembly for a file
+IntroController.cpp.s:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/IntroController.cpp.s
+.PHONY : IntroController.cpp.s
+
+IntroView.obj: IntroView.cpp.obj
+
+.PHONY : IntroView.obj
+
+# target to build an object file
+IntroView.cpp.obj:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/IntroView.cpp.obj
+.PHONY : IntroView.cpp.obj
+
+IntroView.i: IntroView.cpp.i
+
+.PHONY : IntroView.i
+
+# target to preprocess a source file
+IntroView.cpp.i:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/IntroView.cpp.i
+.PHONY : IntroView.cpp.i
+
+IntroView.s: IntroView.cpp.s
+
+.PHONY : IntroView.s
+
+# target to generate assembly for a file
+IntroView.cpp.s:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/IntroView.cpp.s
+.PHONY : IntroView.cpp.s
+
+ScoreController.obj: ScoreController.cpp.obj
+
+.PHONY : ScoreController.obj
+
+# target to build an object file
+ScoreController.cpp.obj:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj
+.PHONY : ScoreController.cpp.obj
+
+ScoreController.i: ScoreController.cpp.i
+
+.PHONY : ScoreController.i
+
+# target to preprocess a source file
+ScoreController.cpp.i:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.i
+.PHONY : ScoreController.cpp.i
+
+ScoreController.s: ScoreController.cpp.s
+
+.PHONY : ScoreController.s
+
+# target to generate assembly for a file
+ScoreController.cpp.s:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.s
+.PHONY : ScoreController.cpp.s
+
+ScoreView.obj: ScoreView.cpp.obj
+
+.PHONY : ScoreView.obj
+
+# target to build an object file
+ScoreView.cpp.obj:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.obj
+.PHONY : ScoreView.cpp.obj
+
+ScoreView.i: ScoreView.cpp.i
+
+.PHONY : ScoreView.i
+
+# target to preprocess a source file
+ScoreView.cpp.i:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.i
+.PHONY : ScoreView.cpp.i
+
+ScoreView.s: ScoreView.cpp.s
+
+.PHONY : ScoreView.s
+
+# target to generate assembly for a file
+ScoreView.cpp.s:
+	$(MAKE) -f CMakeFiles\SpaceShipGame.dir\build.make CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.s
+.PHONY : ScoreView.cpp.s
 
 Ship.obj: Ship.cpp.obj
 
@@ -434,15 +542,27 @@ help:
 	@echo ... Board.obj
 	@echo ... Board.i
 	@echo ... Board.s
-	@echo ... BoardView.obj
-	@echo ... BoardView.i
-	@echo ... BoardView.s
 	@echo ... ExtraVittality.obj
 	@echo ... ExtraVittality.i
 	@echo ... ExtraVittality.s
 	@echo ... ExtraVittalityGraphic.obj
 	@echo ... ExtraVittalityGraphic.i
 	@echo ... ExtraVittalityGraphic.s
+	@echo ... GameManager.obj
+	@echo ... GameManager.i
+	@echo ... GameManager.s
+	@echo ... IntroController.obj
+	@echo ... IntroController.i
+	@echo ... IntroController.s
+	@echo ... IntroView.obj
+	@echo ... IntroView.i
+	@echo ... IntroView.s
+	@echo ... ScoreController.obj
+	@echo ... ScoreController.i
+	@echo ... ScoreController.s
+	@echo ... ScoreView.obj
+	@echo ... ScoreView.i
+	@echo ... ScoreView.s
 	@echo ... Ship.obj
 	@echo ... Ship.i
 	@echo ... Ship.s

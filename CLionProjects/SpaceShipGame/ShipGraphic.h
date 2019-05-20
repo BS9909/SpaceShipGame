@@ -15,6 +15,8 @@ class ShipGraphic {
     sf::Texture boomTexture;
     sf::Sprite shipSprite;
     Direction direction;
+    sf::Text HPText;
+    sf::Font font;
 
 public:
     const sf::Sprite &getShipSprite() const;

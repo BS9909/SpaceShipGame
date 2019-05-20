@@ -13,7 +13,8 @@ class shipController {
     ShipGraphic &shipGraphic;
 public:
     shipController(Ship &ship,ShipGraphic &shipGraphic);
-    void controllEvents(sf::Event event);
+    void controllEvents();
+    void draw(sf::RenderWindow &window);
 };
 
 

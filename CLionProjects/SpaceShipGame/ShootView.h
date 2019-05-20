@@ -15,14 +15,14 @@ class ShootView {
     sf::Sprite bulletSprite;
     std::vector<sf::Sprite> bulletSpriteBox;
     ShipGraphic &shipGraphic;
-    bool isShoot;
-    sf::Time elapsed;
+    float elapseTime;
     sf::Clock clock;
+    float delay = 0.1, timer = 0;
 public:
     ShootView(ShipGraphic &shipGraphic);
     void draw(sf::RenderWindow &window);
     const std::vector<sf::Sprite> &getBulletSpriteBox() const;
-
+    void deleteSprite(int deleteIndeks);
 };
 
 

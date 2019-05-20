@@ -14,9 +14,9 @@ class ExtraVittalityGraphic {
     sf::Texture itemTexture;
     sf::Sprite itemSprite;
     std::vector<sf::Sprite> itemSpriteBox;
-
+    int width, high;
 public:
-    ExtraVittalityGraphic(ExtraVittality &extraVittality);
+    ExtraVittalityGraphic(ExtraVittality &extraVittality, int width, int high);
     void draw(sf::RenderWindow &window);
     void generateNewItem();
     const std::vector<sf::Sprite> &getItemSpriteBox() const;

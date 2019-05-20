@@ -10,25 +10,31 @@ ShootView::ShootView(ShipGraphic &shipGraphic):shipGraphic(shipGraphic) {
     bulletSprite.setTexture(bulletTexture);
     bulletSprite.setScale(sf::Vector2f(0.05,0.05));
     bulletSpriteBox.push_back(bulletSprite);
-    isShoot = false;
 }
 void ShootView::draw(sf::RenderWindow &window) {
-    elapsed = clock.getElapsedTime();
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&elapsed.asSeconds()>0.5) {
-        isShoot = true;
+    elapseTime = clock.getElapsedTime().asSeconds();
+    timer += elapseTime;
+    clock.restart();
+
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&timer > delay) {
         bulletSprite.setPosition(shipGraphic.getShipPosition().getPosition().x+50,shipGraphic.getShipPosition().getPosition().y);
         bulletSpriteBox.push_back(bulletSprite);
-        clock.restart();
+        timer = 0;
     }
-    if(isShoot) {
-        for (int i = 1; i < bulletSpriteBox.size(); ++i) {
-            bulletSpriteBox[i].move(0.5 ,0);
-            window.draw(bulletSpriteBox[i]);
+    for (int i = 1; i < bulletSpriteBox.size(); ++i) {
+        bulletSpriteBox[i].move(0.5 ,0);
+        window.draw(bulletSpriteBox[i]);
+    }
+    for (int j = 0; j < bulletSpriteBox.size(); ++j) {
+        if (bulletSpriteBox[j].getPosition().x == 1000) {
+            bulletSpriteBox.erase(bulletSpriteBox.begin() + j);
         }
     }
 
 }
-
+void ShootView::deleteSprite(int deleteIndeks) {
+    bulletSpriteBox.erase(bulletSpriteBox.begin()+deleteIndeks                                                                    );
+}
 const std::vector<sf::Sprite> &ShootView::getBulletSpriteBox() const {
     return bulletSpriteBox;
 }

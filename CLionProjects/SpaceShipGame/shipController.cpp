@@ -7,7 +7,7 @@ shipController::shipController(Ship &ship,ShipGraphic &shipGraphic):ship(ship),
 shipGraphic(shipGraphic)
 {}
 
-void shipController::controllEvents(sf::Event event) {
+void shipController::controllEvents() {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
         shipGraphic.setDirection(DOWN);
 
@@ -21,4 +21,7 @@ void shipController::controllEvents(sf::Event event) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
         shipGraphic.setDirection(LEFT);
     }
+}
+void shipController::draw(sf::RenderWindow &window) {
+    shipGraphic.draw(window);
 }

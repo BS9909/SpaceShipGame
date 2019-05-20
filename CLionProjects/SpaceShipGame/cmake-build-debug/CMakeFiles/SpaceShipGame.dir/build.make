@@ -196,19 +196,75 @@ CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\SpaceShipGame\ExtraVittalityGraphic.cpp -o CMakeFiles\SpaceShipGame.dir\ExtraVittalityGraphic.cpp.s
 
-CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj: CMakeFiles/SpaceShipGame.dir/flags.make
-CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj: CMakeFiles/SpaceShipGame.dir/includes_CXX.rsp
-CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj: ../BoardView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\SpaceShipGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceShipGame.dir\BoardView.cpp.obj -c C:\Users\Bartek\CLionProjects\SpaceShipGame\BoardView.cpp
+CMakeFiles/SpaceShipGame.dir/IntroView.cpp.obj: CMakeFiles/SpaceShipGame.dir/flags.make
+CMakeFiles/SpaceShipGame.dir/IntroView.cpp.obj: CMakeFiles/SpaceShipGame.dir/includes_CXX.rsp
+CMakeFiles/SpaceShipGame.dir/IntroView.cpp.obj: ../IntroView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\SpaceShipGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SpaceShipGame.dir/IntroView.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceShipGame.dir\IntroView.cpp.obj -c C:\Users\Bartek\CLionProjects\SpaceShipGame\IntroView.cpp
 
-CMakeFiles/SpaceShipGame.dir/BoardView.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceShipGame.dir/BoardView.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\SpaceShipGame\BoardView.cpp > CMakeFiles\SpaceShipGame.dir\BoardView.cpp.i
+CMakeFiles/SpaceShipGame.dir/IntroView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceShipGame.dir/IntroView.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\SpaceShipGame\IntroView.cpp > CMakeFiles\SpaceShipGame.dir\IntroView.cpp.i
 
-CMakeFiles/SpaceShipGame.dir/BoardView.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceShipGame.dir/BoardView.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\SpaceShipGame\BoardView.cpp -o CMakeFiles\SpaceShipGame.dir\BoardView.cpp.s
+CMakeFiles/SpaceShipGame.dir/IntroView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceShipGame.dir/IntroView.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\SpaceShipGame\IntroView.cpp -o CMakeFiles\SpaceShipGame.dir\IntroView.cpp.s
+
+CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj: CMakeFiles/SpaceShipGame.dir/flags.make
+CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj: CMakeFiles/SpaceShipGame.dir/includes_CXX.rsp
+CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj: ../GameManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\SpaceShipGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceShipGame.dir\GameManager.cpp.obj -c C:\Users\Bartek\CLionProjects\SpaceShipGame\GameManager.cpp
+
+CMakeFiles/SpaceShipGame.dir/GameManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceShipGame.dir/GameManager.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\SpaceShipGame\GameManager.cpp > CMakeFiles\SpaceShipGame.dir\GameManager.cpp.i
+
+CMakeFiles/SpaceShipGame.dir/GameManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceShipGame.dir/GameManager.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\SpaceShipGame\GameManager.cpp -o CMakeFiles\SpaceShipGame.dir\GameManager.cpp.s
+
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: CMakeFiles/SpaceShipGame.dir/flags.make
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: CMakeFiles/SpaceShipGame.dir/includes_CXX.rsp
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj: ../IntroController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\SpaceShipGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceShipGame.dir\IntroController.cpp.obj -c C:\Users\Bartek\CLionProjects\SpaceShipGame\IntroController.cpp
+
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceShipGame.dir/IntroController.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\SpaceShipGame\IntroController.cpp > CMakeFiles\SpaceShipGame.dir\IntroController.cpp.i
+
+CMakeFiles/SpaceShipGame.dir/IntroController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceShipGame.dir/IntroController.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\SpaceShipGame\IntroController.cpp -o CMakeFiles\SpaceShipGame.dir\IntroController.cpp.s
+
+CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.obj: CMakeFiles/SpaceShipGame.dir/flags.make
+CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.obj: CMakeFiles/SpaceShipGame.dir/includes_CXX.rsp
+CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.obj: ../ScoreView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\SpaceShipGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceShipGame.dir\ScoreView.cpp.obj -c C:\Users\Bartek\CLionProjects\SpaceShipGame\ScoreView.cpp
+
+CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\SpaceShipGame\ScoreView.cpp > CMakeFiles\SpaceShipGame.dir\ScoreView.cpp.i
+
+CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\SpaceShipGame\ScoreView.cpp -o CMakeFiles\SpaceShipGame.dir\ScoreView.cpp.s
+
+CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: CMakeFiles/SpaceShipGame.dir/flags.make
+CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: CMakeFiles/SpaceShipGame.dir/includes_CXX.rsp
+CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj: ../ScoreController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Bartek\CLionProjects\SpaceShipGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SpaceShipGame.dir\ScoreController.cpp.obj -c C:\Users\Bartek\CLionProjects\SpaceShipGame\ScoreController.cpp
+
+CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Bartek\CLionProjects\SpaceShipGame\ScoreController.cpp > CMakeFiles\SpaceShipGame.dir\ScoreController.cpp.i
+
+CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Bartek\CLionProjects\SpaceShipGame\ScoreController.cpp -o CMakeFiles\SpaceShipGame.dir\ScoreController.cpp.s
 
 # Object files for target SpaceShipGame
 SpaceShipGame_OBJECTS = \
@@ -222,7 +278,11 @@ SpaceShipGame_OBJECTS = \
 "CMakeFiles/SpaceShipGame.dir/ShootView.cpp.obj" \
 "CMakeFiles/SpaceShipGame.dir/ExtraVittality.cpp.obj" \
 "CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.obj" \
-"CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj"
+"CMakeFiles/SpaceShipGame.dir/IntroView.cpp.obj" \
+"CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj" \
+"CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj" \
+"CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.obj" \
+"CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj"
 
 # External object files for target SpaceShipGame
 SpaceShipGame_EXTERNAL_OBJECTS =
@@ -237,7 +297,11 @@ SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/Board.cpp.obj
 SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/ShootView.cpp.obj
 SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/ExtraVittality.cpp.obj
 SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/ExtraVittalityGraphic.cpp.obj
-SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/BoardView.cpp.obj
+SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/IntroView.cpp.obj
+SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/GameManager.cpp.obj
+SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/IntroController.cpp.obj
+SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/ScoreView.cpp.obj
+SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/ScoreController.cpp.obj
 SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/build.make
 SpaceShipGame.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-graphics-d.a
 SpaceShipGame.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-window-d.a
@@ -245,7 +309,7 @@ SpaceShipGame.exe: C:/Users/Bartek/SFML-2.5.1/lib/libsfml-system-d.a
 SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/linklibs.rsp
 SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/objects1.rsp
 SpaceShipGame.exe: CMakeFiles/SpaceShipGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Bartek\CLionProjects\SpaceShipGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable SpaceShipGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Bartek\CLionProjects\SpaceShipGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable SpaceShipGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SpaceShipGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
