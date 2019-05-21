@@ -10,13 +10,13 @@
 class IntroController {
     IntroView &introView;
     asteroidsGraphic &asteroidsGraphic1;
-    bool isFinished;
+    bool isFinished, chooseLevel;
 public:
     IntroController (IntroView &introView,asteroidsGraphic &asteroidsGraphic1);
     void controllEvents(sf::RenderWindow &window);
     bool getIsFinished() {return isFinished;}
     void draw(sf::RenderWindow &window);
-    void resetFinishedIntro(){isFinished = false;}
+    void resetFinishedIntro(){isFinished = false;chooseLevel = false;}
 };
 
 

@@ -39,6 +39,11 @@ IntroView::IntroView(int textSize, int xPostion, int yPosition) {
     hardText.setString("HARD");
     hardText.setCharacterSize(textSize);
     hardText.setFillColor(sf::Color::Red);
+
+    chosenLevelText.setFont(font);
+    chosenLevelText.setPosition(xPostion,yPosition+200);
+    chosenLevelText.setCharacterSize(textSize);
+
 }
 void IntroView::draw(sf::RenderWindow &window) {
     window.draw(startText);
@@ -46,4 +51,5 @@ void IntroView::draw(sf::RenderWindow &window) {
     window.draw(easyText);
     window.draw(normalText);
     window.draw(hardText);
+    window.draw(chosenLevelText);
 }
