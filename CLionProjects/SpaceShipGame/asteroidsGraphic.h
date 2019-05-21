@@ -19,11 +19,12 @@ class asteroidsGraphic {
     float elapseTime;
     sf::Clock clock;
     float timer, asteroidsAmount, speed;
+    void generateNewAsteroid();
+
 
 public:
     asteroidsGraphic(int asteroidSize, Asteroids &asteroids, int widht, int high);
     void draw(sf::RenderWindow &window);
-    void generateNewAsteroid();
     const std::vector<sf::Sprite> &getAsteroidSpriteBox() const;
     void setAsteroidSprite(int asteroidIndex);
     void setSpeed(float speedFromIntro){speed = speedFromIntro;}

@@ -17,7 +17,7 @@ class ShootView {
     ShipGraphic &shipGraphic;
     float elapseTime;
     sf::Clock clock;
-    float delay = 0.1, timer = 0;
+    float delay , timer = 0;
 public:
     ShootView(ShipGraphic &shipGraphic);
     void draw(sf::RenderWindow &window);

@@ -26,7 +26,7 @@ void asteroidsGraphic::draw(sf::RenderWindow &window) {
     //Kontrola wielkosci vectorów
     //std::cout << "Vector Spritow: " << asteroidSpriteBox.size() << std::endl;
     //std::cout << "Vector pozycji: " << asteroids.getAsteroidsBox().size() << std::endl;
-    std::cout<<asteroidSpriteBox[0].getPosition().x<<std::endl;
+    //std::cout<<asteroidSpriteBox[0].getPosition().x<<std::endl;
 
     elapseTime = clock.getElapsedTime().asSeconds();
     timer += elapseTime;

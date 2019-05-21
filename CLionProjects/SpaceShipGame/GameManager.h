@@ -13,9 +13,10 @@ class GameManager {
     Board &board;
     IntroController &introController;
     ScoreController &scoreController;
+    void updateStte();
+
 public:
     GameManager(IntroController &introController, Board &board, ScoreController &scoreController);
-    void updateStte();
     void draw(sf::RenderWindow &window);
     void handleState(sf::RenderWindow &window);
 };

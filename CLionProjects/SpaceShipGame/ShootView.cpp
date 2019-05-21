@@ -10,19 +10,19 @@ ShootView::ShootView(ShipGraphic &shipGraphic):shipGraphic(shipGraphic) {
     bulletSprite.setTexture(bulletTexture);
     bulletSprite.setScale(sf::Vector2f(0.05,0.05));
     bulletSpriteBox.push_back(bulletSprite);
+    delay = 0.4;
 }
 void ShootView::draw(sf::RenderWindow &window) {
     elapseTime = clock.getElapsedTime().asSeconds();
     timer += elapseTime;
     clock.restart();
-
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&timer > delay) {
         bulletSprite.setPosition(shipGraphic.getShipPosition().getPosition().x+50,shipGraphic.getShipPosition().getPosition().y);
         bulletSpriteBox.push_back(bulletSprite);
         timer = 0;
     }
     for (int i = 1; i < bulletSpriteBox.size(); ++i) {
-        bulletSpriteBox[i].move(0.5 ,0);
+        bulletSpriteBox[i].move(sf::Vector2f(1,0));
         window.draw(bulletSpriteBox[i]);
     }
     for (int j = 0; j < bulletSpriteBox.size(); ++j) {

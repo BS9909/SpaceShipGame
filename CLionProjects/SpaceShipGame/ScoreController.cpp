@@ -23,7 +23,6 @@ void ScoreController::controllEvent() {
             ship.resetHP();
             board.resetFinishBoard();
             board.resetTimer();
-            asteroidsGraphic1.generateNewAsteroid();
             introController.resetFinishedIntro();
         }
     }
