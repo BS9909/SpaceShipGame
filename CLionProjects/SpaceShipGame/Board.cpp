@@ -41,8 +41,8 @@ void Board::collision() {
     for (int j = 0; j <shootView.getBulletSpriteBox().size(); ++j) {
         if (asteroidsGraphic1.getAsteroidSpriteBox()[j].getGlobalBounds().intersects(
                 shootView.getBulletSpriteBox()[j].getGlobalBounds())) {
-            shootView.deleteSprite(j);
             asteroidsGraphic1.setAsteroidSprite(j);
+            shootView.deleteSprite(j);
         }
     }
     if (ship.getHP() <= 0) {

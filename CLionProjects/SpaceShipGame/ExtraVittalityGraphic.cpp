@@ -14,7 +14,7 @@ ExtraVittalityGraphic::ExtraVittalityGraphic(ExtraVittality &extraVittality,int 
 }
 void ExtraVittalityGraphic::draw(sf::RenderWindow &window) {
     for (int i = 0; i < itemSpriteBox.size(); ++i) {
-        itemSpriteBox[i].move(sf::Vector2f(-1,0));
+        itemSpriteBox[i].move(sf::Vector2f(-0.5,0));
         window.draw(itemSpriteBox[i]);
     }if(itemSpriteBox.size()>4) {
         for (int j = 0; j < itemSpriteBox.size(); ++j) {

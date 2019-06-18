@@ -3,7 +3,6 @@
 #include "Ship.h"
 #include "ShipGraphic.h"
 #include "shipController.h"
-#include "Asteroids.h"
 #include "asteroidsGraphic.h"
 #include "Board.h"
 #include "ShootView.h"
@@ -17,29 +16,31 @@
 #include <ctime>
 #include <cstdlib>
 
-
 int main() {
+    int x = 'a';
+    std::cout<<x;
+    int width = 800, high = 600;
     srand(time(NULL));
-    sf::RenderWindow window(sf::VideoMode(800,600), "SpaceShipGame");
+    sf::RenderWindow window(sf::VideoMode(width,high), "SpaceShipGame");
     sf::Texture backgourndTexture;
     sf::Sprite backgroundSpirte;
     backgourndTexture.loadFromFile("background.jpg");
     backgroundSpirte.setTexture(backgourndTexture);
     sf::Event event;
     //----------OBIEKTY SHIP------------//
-    Ship ship(800, 600,50);
+    Ship ship(width, high,50);
     ShipGraphic shipGraphic(ship,50);
     shipController shipController(ship,shipGraphic);
     //----------------------------------//
     //----------OBIEKTY ASTEROID--------//
-    Asteroids asteroids(800,600);
-    asteroidsGraphic asteroidsGraphic(50,asteroids, 800, 600);
+    Asteroids asteroids(width,high);
+    asteroidsGraphic asteroidsGraphic(50,asteroids, width, high);
 
-    //----------SHOOT--------------------//IN PROGRESS XD
-    ShootView shootView(shipGraphic);
+    //----------SHOOT--------------------//
+    ShootView shootView(shipGraphic, width);
     //---------EXTRA VITTALITY------------//
     ExtraVittality extraVittality(800,600);
-    ExtraVittalityGraphic extraVittalityGraphic(extraVittality, 800,600);
+    ExtraVittalityGraphic extraVittalityGraphic(extraVittality, width,high);
     //----------BOARD-------------------//
     Board board(window,ship,asteroids,shipGraphic,asteroidsGraphic,extraVittality,extraVittalityGraphic,shootView,shipController);
     //----------INTRO--------------------//
@@ -62,7 +63,6 @@ int main() {
 //        std::cout<<"kometa x: "<<asteroids.getAsteroidPosition().xPos<<"kometa y: "<<asteroids.getAsteroidPosition().yPos<<std::endl;
 
         gameManager.handleState(window);
-
         gameManager.draw(window);
         //board.collision();
         //board.draw(window);

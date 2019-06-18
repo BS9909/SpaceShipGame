@@ -29,8 +29,7 @@ void IntroController::controllEvents(sf::RenderWindow &window) {
 
     if (introView.getEasyText().getGlobalBounds().contains(translated_pos)) {
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)){
-            asteroidsGraphic1.setSpeed(-0.5);
-            asteroidsGraphic1.setAsteroidAmount(0.5);
+            asteroidsGraphic1.setSpeed(-0.2);
             introView.setLevelText("EASY");
             introView.setLevelColor(sf::Color::Green);
             introView.setTextxPosition(20);
@@ -39,7 +38,7 @@ void IntroController::controllEvents(sf::RenderWindow &window) {
     }
     if (introView.getNormalText().getGlobalBounds().contains(translated_pos)) {
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)){
-            asteroidsGraphic1.setSpeed(-1);
+            asteroidsGraphic1.setSpeed(-0.7);
             asteroidsGraphic1.setAsteroidAmount(0.5);
             chooseLevel = true;
             introView.setLevelText("NORMAL");
@@ -49,7 +48,7 @@ void IntroController::controllEvents(sf::RenderWindow &window) {
     }
     if (introView.getHardText().getGlobalBounds().contains(translated_pos)) {
         if (sf::Mouse::isButtonPressed(sf::Mouse::Button::Left)){
-            asteroidsGraphic1.setSpeed(-1);
+            asteroidsGraphic1.setSpeed(-0.9);
             asteroidsGraphic1.setAsteroidAmount(0.2);
             chooseLevel = true;
             introView.setLevelText("HARD");

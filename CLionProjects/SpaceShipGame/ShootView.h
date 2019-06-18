@@ -18,8 +18,9 @@ class ShootView {
     float elapseTime;
     sf::Clock clock;
     float delay , timer = 0;
+    int width;
 public:
-    ShootView(ShipGraphic &shipGraphic);
+    ShootView(ShipGraphic &shipGraphic, int width);
     void draw(sf::RenderWindow &window);
     const std::vector<sf::Sprite> &getBulletSpriteBox() const;
     void deleteSprite(int deleteIndeks);

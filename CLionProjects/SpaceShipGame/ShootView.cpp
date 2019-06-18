@@ -5,7 +5,8 @@
 #include "ShootView.h"
 #include <vector>
 
-ShootView::ShootView(ShipGraphic &shipGraphic):shipGraphic(shipGraphic) {
+ShootView::ShootView(ShipGraphic &shipGraphic, int width):shipGraphic(shipGraphic) {
+    this -> width = width;
     bulletTexture.loadFromFile("bullet.jpg");
     bulletSprite.setTexture(bulletTexture);
     bulletSprite.setScale(sf::Vector2f(0.05,0.05));
@@ -17,7 +18,7 @@ void ShootView::draw(sf::RenderWindow &window) {
     timer += elapseTime;
     clock.restart();
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&&timer > delay) {
-        bulletSprite.setPosition(shipGraphic.getShipPosition().getPosition().x+50,shipGraphic.getShipPosition().getPosition().y);
+        bulletSprite.setPosition(shipGraphic.getShipPosition().getPosition().x,shipGraphic.getShipPosition().getPosition().y);
         bulletSpriteBox.push_back(bulletSprite);
         timer = 0;
     }
@@ -33,7 +34,7 @@ void ShootView::draw(sf::RenderWindow &window) {
 
 }
 void ShootView::deleteSprite(int deleteIndeks) {
-    bulletSpriteBox.erase(bulletSpriteBox.begin()+deleteIndeks                                                                    );
+    bulletSpriteBox.erase(bulletSpriteBox.begin()+deleteIndeks);
 }
 const std::vector<sf::Sprite> &ShootView::getBulletSpriteBox() const {
     return bulletSpriteBox;

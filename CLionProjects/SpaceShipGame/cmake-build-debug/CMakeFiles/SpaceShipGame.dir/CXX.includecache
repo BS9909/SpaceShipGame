@@ -12,22 +12,6 @@ vector
 iostream
 -
 
-C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroController.cpp
-IntroController.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroController.h
-
-C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroController.h
-IntroView.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroView.h
-asteroidsGraphic.h
-C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.h
-
-C:/Users/Bartek/CLionProjects/SpaceShipGame/IntroView.h
-SFML/Graphics.hpp
--
-iostream
--
-
 C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.h
 iostream
 -
@@ -37,6 +21,14 @@ SFML/Graphics.hpp
 -
 Ship.h
 C:/Users/Bartek/CLionProjects/SpaceShipGame/Ship.h
+
+C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.cpp
+asteroidsGraphic.h
+C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.h
+cmath
+-
+windows.h
+-
 
 C:/Users/Bartek/CLionProjects/SpaceShipGame/asteroidsGraphic.h
 SFML/Graphics.hpp

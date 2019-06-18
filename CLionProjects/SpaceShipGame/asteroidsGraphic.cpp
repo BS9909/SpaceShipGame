@@ -7,7 +7,7 @@
 #include <windows.h>
 
 asteroidsGraphic::asteroidsGraphic(int asteroidSize, Asteroids &asteroids, int width, int high):
-asteroids(asteroids)
+        asteroids(asteroids)
 {
     this->asteroidSize = asteroidSize;
     this->width = width;
@@ -17,9 +17,9 @@ asteroids(asteroids)
     asteroidSprite.setScale(sf::Vector2f(0.09,0.09));
     asteroidSprite.setPosition(asteroids.getAsteroidsBox()[0].xPos,asteroids.getAsteroidsBox()[0].yPos);
     asteroidSpriteBox.push_back(asteroidSprite);
-    generateNewAsteroid();
+   // generateNewAsteroid();
     timer = 0;
-    asteroidsAmount = 0; //Od delay zależy ilość komet na planszy
+    asteroidsAmount = 1; //Od delay zależy ilość komet na planszy
     speed = 0;
 }
 void asteroidsGraphic::draw(sf::RenderWindow &window) {
@@ -33,20 +33,20 @@ void asteroidsGraphic::draw(sf::RenderWindow &window) {
     clock.restart();
 
     for (int i = 0; i < asteroidSpriteBox.size(); ++i) {
-            asteroidSpriteBox[i].move(speed, 0);//Od tej linii kodu zależy prędkość poruszających się komet
-            window.draw(asteroidSpriteBox[i]);
-
+        asteroidSpriteBox[i].move(speed, 0);//Od tej linii kodu zależy prędkość poruszających się komet
+        window.draw(asteroidSpriteBox[i]);
     }
+
     if(asteroidSpriteBox.size()>4) {
         for (int j = 0; j < asteroidSpriteBox.size(); ++j) {
-            if (asteroidSpriteBox[j].getPosition().x == -50) {
+            if (asteroidSpriteBox[j].getPosition().x < 0) {
                 asteroidSpriteBox[j].setPosition(width, rand() % high);
-                timer = 0;
             }
         }
     }else {
         generateNewAsteroid();
     }
+
 }
 void asteroidsGraphic::generateNewAsteroid() {
     for (int j = 0; j < asteroidSpriteBox.size(); ++j) {
